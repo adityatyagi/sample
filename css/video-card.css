@@ -27,7 +27,7 @@ body {
 
 #duration {
     position: absolute;
-    left: 110px;
+    left: 100px;
 }
 
 #price {
@@ -36,12 +36,14 @@ body {
 }
 
 #price>span {
-    padding-right: 6px;
     font-size: 22px;
+    color: #29b1a7;
+    font-weight: 900;
 }
 
 #card-image {
-    padding: 4px;
+    padding: 8px 5px 0px 5px;
+    position: relative;
 }
 
 #card-element {
@@ -50,4 +52,41 @@ body {
 
 .card-img-top {
     height: 170px;
+}
+
+#favourite {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    color: #b8c1c0;
+}
+
+#top-mentor {
+    position: absolute;
+    top: 20px;
+}
+
+#top-mentor-text {
+    font-size: 11px;
+    position: absolute;
+    top: 25px;
+    z-index: 1;
+    padding-left: 4px;
+    font-weight: 600;
+}
+
+.lightGrey {
+    color: #d8dad9;
+}
+
+.stats-color {
+    color: #b3bdbc;
+}
+
+.star-color-notSelected {
+    color: #b3beba;
+}
+
+.star-color-selected {
+    color: #f4a725;
 }
