@@ -1,0 +1,37 @@
+#action {
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px 10px 0px 10px;
+    width: 65%;
+}
+
+#explore {
+    padding: 0px 20px;
+}
+
+#enroll {
+    padding: 0px 28px;
+}
+
+#learn {
+    padding-left: 25px;
+}
+
+#explore,
+#enroll,
+#learn {
+    display: inline-block;
+}
+
+#explore>img,
+#enroll>img,
+#learn>img {
+    margin-top: -75px;
+    padding-right: 10px;
+}
+
+#explore-info,
+#enroll-info,
+#learn-info {
+    display: inline-block;
+}
