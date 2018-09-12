@@ -1,0 +1,53 @@
+body {
+    padding-top: 7.5rem;
+    padding-bottom: 9.5rem;
+    background: #bebebe;
+}
+
+
+/* Temporary */
+
+#card-element {
+    margin: 0 auto;
+}
+
+#course-info {
+    padding-bottom: 18px;
+}
+
+#stats {
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+}
+
+#views {
+    position: absolute;
+}
+
+#duration {
+    position: absolute;
+    left: 110px;
+}
+
+#price {
+    float: right;
+    margin-top: 14px;
+}
+
+#price>span {
+    padding-right: 6px;
+    font-size: 22px;
+}
+
+#card-image {
+    padding: 4px;
+}
+
+#card-element {
+    width: 17rem !important;
+}
+
+.card-img-top {
+    height: 170px;
+}
