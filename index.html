@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="./favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>ELEMENTO</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,48 +19,102 @@
 
     <!-- action.css -->
     <link rel="stylesheet" href="./css/action.css">
+
+    <!-- navbar.css-->
+    <link rel="stylesheet" href="./css/navbar.css">
+
+    <!--header.css-->
+    <link rel="stylesheet" href="./css/header.css">
+
+    <!--search-bar.css-->
+    <link rel="stylesheet" href="./css/search-bar.css">
+
+    <!--index.css-->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Montserrat-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 
 <body>
+    <!-- NAVBAR: STARTS -->
+    <nav id="navbar-task" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand white" href="#">ELEMENTO<span id="two">2</span></a>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="nav-link" href="#" id="navbarDropdown" data-hover="dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-th white" aria-hidden="true"></i>
+                        <span class="white">&nbsp;CATEGORIES</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <div id="searchBar">
+                <form class="my-2 my-lg-0">
+                    <div id="searchFormContainer">
+                        <input class="form-control mr-sm-2" id="search-form" type="search" placeholder="Search for courses" aria-label="Search">
+                        <i class="fa fa-search" id="search-icon" aria-hidden="true"></i>
+                    </div>
+                </form>
+            </div>
+            <div id="rightNavbar" class="ib">
+                <div id="instructor" class="ib">
+                    <a href="#" class="white">Become an Instructor</a>
+                </div>
+                <div id="login" class="ib">
+                    <a href="#" class="white">Login</a>
+                </div>
+                <div id="signUp" class="ib">
+                    <button type="button" class="btn btn-outline-primary btn-sm">Sign Up</button>
+                </div>
+
+            </div>
         </div>
     </nav>
+    <!-- NAVBAR: ENDS -->
 
+
+    <!--CONTENT: STARTS-->
     <main role="main">
+
+        <!--HEADER: STARTS-->
+        <div id="header-container" class="jumbotron">
+            <div id="headings" class="row">
+                <div class="col-md-12">
+                    <h1 id="main-heading">Learn the skills you need</h1>
+                    <h3 id="sub-heading">Take in-depth online courses and meet any challenge with skills.<br>From designing to creating full products.</h3>
+                </div>
+            </div>
+
+
+            <!--search-bar:starts-->
+            <div class="row" id="search-bar-row">
+                <div id="search-container" class="col-md-12 text-center">
+                    <input type="text" placeholder="What do you want to learn">
+                    <button id="search-btn" type="button" class="btn btn-primary btn-round">SEARCH</button>
+                </div>
+            </div>
+            <!--search-bar:ends-->
+        </div>
+        <!--HEADER: ENDS-->
+
+
+
 
         <!-- Action: STARTS -->
         <div id="container-action">
-            <div id="action" class="container">
+            <div id="action" class="container d-flex justify-content-between">
 
                 <div id="explore">
                     <img src="./img/action/magnifying glass.png">
@@ -90,11 +144,109 @@
         <br>
         <br>
         <br>
+        <!-- Top Courses and See All:START -->
+        <div id="navigations" class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-between">
+                    <p>Top Courses in <a href="#" id="courseName">Marketing</a></p>
+                    <p><a href="#" id="seeAll">See All<i class="fas fa-chevron-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Top Courses and See All: END -->
+        <br>
         <!-- Video Tutorials Card: STARTS -->
         <div id="container-cardHolder">
             <div id="video-card" class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-3">
+                        <div id="card-element" class="card" style="width: 18rem;">
+                            <div id="card-image">
+                                <i id="favourite" class="far fa-heart fa-2x"></i>
+                                <span id="top-mentor-text">Top Mentor</span>
+                                <span id="top-mentor"><img src="./img/video-cards/top-mentor.png" style="width:30%"></span>
+                                <img class="card-img-top" src="./img/video-cards/course4.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div id="author">
+                                    <p class="lightGrey">Albert Einstein</p>
+                                </div>
+                                <div id="course-title">
+                                    <h5 class="card-title">Introduction to theoretical physicist</h5>
+
+                                    <!--STARS-->
+                                    <span id="stars">
+                                      <i class="fas fa-star star-color-selected"></i>
+                                      <i class="fas fa-star star-color-selected"></i>
+                                      <i class="fas fa-star star-color-selected"></i>
+                                      <i class="fas fa-star star-color-notSelected"></i>
+                                      <i class="fas fa-star star-color-notSelected"></i>
+                                    </span>
+
+                                </div>
+                                <div id="course-info">
+                                    <div id="stats">
+                                        <div id="views">
+                                            <i class="fas fa-user stats-color"></i>&nbsp;&nbsp;
+                                            <span class="stats-color">3,045</span>
+                                        </div>
+                                        <div id="duration">
+                                            <i class="far fa-clock stats-color"></i>&nbsp;&nbsp;
+                                            <span class="stats-color">43 hours</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="price">
+                                    <span>$20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="card-element" class="card" style="width: 18rem;">
+                            <div id="card-image">
+                                <i id="favourite" class="far fa-heart fa-2x"></i>
+                                <span id="top-mentor-text">Top Mentor</span>
+                                <span id="top-mentor"><img src="./img/video-cards/top-mentor.png" style="width:30%"></span>
+                                <img class="card-img-top" src="./img/video-cards/course2.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div id="author">
+                                    <p class="lightGrey">Albert Einstein</p>
+                                </div>
+                                <div id="course-title">
+                                    <h5 class="card-title">Introduction to theoretical physicist</h5>
+
+                                    <!--STARS-->
+                                    <span id="stars">
+                                      <i class="fas fa-star star-color-selected"></i>
+                                      <i class="fas fa-star star-color-selected"></i>
+                                      <i class="fas fa-star star-color-selected"></i>
+                                      <i class="fas fa-star star-color-notSelected"></i>
+                                      <i class="fas fa-star star-color-notSelected"></i>
+                                    </span>
+
+                                </div>
+                                <div id="course-info">
+                                    <div id="stats">
+                                        <div id="views">
+                                            <i class="fas fa-user stats-color"></i>&nbsp;&nbsp;
+                                            <span class="stats-color">3,045</span>
+                                        </div>
+                                        <div id="duration">
+                                            <i class="far fa-clock stats-color"></i>&nbsp;&nbsp;
+                                            <span class="stats-color">43 hours</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="price">
+                                    <span>$20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
                         <div id="card-element" class="card" style="width: 18rem;">
                             <div id="card-image">
                                 <i id="favourite" class="far fa-heart fa-2x"></i>
@@ -137,6 +289,51 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-md-3">
+                        <div id="card-element" class="card" style="width: 18rem;">
+                            <div id="card-image">
+                                <i id="favourite" class="far fa-heart fa-2x"></i>
+                                <span id="top-mentor-text">Top Mentor</span>
+                                <span id="top-mentor"><img src="./img/video-cards/top-mentor.png" style="width:30%"></span>
+                                <img class="card-img-top" src="./img/video-cards/course3.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <div id="author">
+                                    <p class="lightGrey">Albert Einstein</p>
+                                </div>
+                                <div id="course-title">
+                                    <h5 class="card-title">Introduction to theoretical physicist</h5>
+
+                                    <!--STARS-->
+                                    <span id="stars">
+                                      <i class="fas fa-star star-color-selected"></i>
+                                      <i class="fas fa-star star-color-selected"></i>
+                                      <i class="fas fa-star star-color-selected"></i>
+                                      <i class="fas fa-star star-color-notSelected"></i>
+                                      <i class="fas fa-star star-color-notSelected"></i>
+                                    </span>
+
+                                </div>
+                                <div id="course-info">
+                                    <div id="stats">
+                                        <div id="views">
+                                            <i class="fas fa-user stats-color"></i>&nbsp;&nbsp;
+                                            <span class="stats-color">3,045</span>
+                                        </div>
+                                        <div id="duration">
+                                            <i class="far fa-clock stats-color"></i>&nbsp;&nbsp;
+                                            <span class="stats-color">43 hours</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="price">
+                                    <span>$20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -148,7 +345,9 @@
         <br>
 
 
+
     </main>
+    <!--CONTENT: ENDS-->
 
     <!-- <footer class="container">
         <p>&copy; Company 2017-2018</p>

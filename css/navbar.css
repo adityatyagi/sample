@@ -1,0 +1,120 @@
+#two {
+    clear: both;
+    font-size: 10px;
+    position: relative;
+    top: -15px;
+    background: #fff;
+    color: #1baba1;
+    margin: 5px;
+    padding: 2px 4px 2px 4px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.ib {
+    display: inline-block
+}
+
+#searchBar {
+    width: 50%;
+    padding-right: 40px;
+    margin-left: -15px;
+}
+
+#search-icon {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    color: #7c7c7d;
+}
+
+#rightNavbar {
+    margin: auto;
+    position: relative;
+    top: 2px;
+}
+
+#search-form {
+    width: 80%;
+    margin: auto;
+    border-radius: none !important;
+}
+
+#instructor {
+    padding-right: 15px;
+}
+
+#login {
+    padding-right: 16px;
+}
+
+#signUp>button {
+    border-radius: .9rem;
+    padding: 4px 30px;
+}
+
+.btn-outline-primary {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #03746c;
+    border-color: #03746c;
+}
+
+.btn-outline-primary:active {
+    color: #fff;
+    background-color: #03746c;
+    border-color: #03746c;
+}
+
+#searchFormContainer {
+    position: relative;
+}
+
+#navbar-task {
+    background: #1baba1 !important;
+}
+
+.white {
+    color: #fff !important;
+}
+
+#instructor>a {
+    text-decoration: none;
+}
+
+#login>a {
+    text-decoration: none;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem #03746c !important;
+    ;
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: #03746c !important;
+    background-color: transparent;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #03746c !important;
+    border-color: #03746c !important;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #03746c !important;
+    ;
+}

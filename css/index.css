@@ -1,0 +1,36 @@
+body {
+    background: #f4fafa !important;
+}
+
+#action {
+    margin-top: -90px;
+}
+
+#navigations {
+    width: 82%;
+}
+
+#courseName {
+    color: #1daaa1;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+#seeAll {
+    color: #1daaa1;
+    text-decoration: none;
+}
+
+.fas.fa-chevron-right {
+    color: #1daaa1;
+    margin-left: 10px;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}

@@ -1,0 +1,17 @@
+.jumbotron {
+    padding-bottom: 14em !important;
+    background: linear-gradient( #1baba196, #1baba196), url(../img/banner.jpg);
+}
+
+#headings {
+    text-align: center;
+    color: #fff;
+}
+
+#main-heading {
+    font-size: 3.5rem;
+}
+
+#sub-heading {
+    font-size: 1.33rem;
+}
